@@ -9,20 +9,7 @@ Showcasing the richest coffee in the city with a modern, clean design.
 - Modern UI with attractive typography
 - Custom fonts: Playfair Display
 - Interactive elements with JavaScript
-
-## File Structure
-
-
-Coffee-House/
-├─ index.html
-├─ assets/
-│ ├─ css/
-│ │ └─ style.css
-│ ├─ js/
-│ │ └─ APP.js
-│ └─ fonts/
-│ └─ PlayfairDisplay-*.ttf
-├─ README.md
+git add README.md
 
 ## Screenshots
 
