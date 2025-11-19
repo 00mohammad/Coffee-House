@@ -1,0 +1,77 @@
+body {
+  font-family: "Playfair", serif;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/PlayfairDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/PlayfairDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+.header_img {
+  width: 100%;
+  display: block;
+}
+.header_imgs_Coffea {
+  width: 5rem;
+}
+.header_imgs_Group {
+  width: 3rem;
+}
+
+.ul_header {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 11rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul_header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.header_li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
