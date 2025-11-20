@@ -1,5 +1,6 @@
 body {
   font-family: "Playfair", serif;
+  color: var(--color_White);
 }
 @font-face {
   font-family: "Playfair";
@@ -32,6 +33,11 @@ body {
   font-weight: 900;
 }
 
+:root {
+  --color_White: hsl(0, 0%, 100%);
+  --color_Warm_Beige: hsl(40, 29%, 84%);
+}
+
 header {
   position: relative;
   width: 100%;
@@ -55,11 +61,12 @@ header {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 11rem;
+  gap: 25rem;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .ul_header a {
@@ -74,4 +81,26 @@ header {
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  margin-right: 2rem;
+}
+.header_text_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--color_White);
+  margin-left: -28.5rem;
+}
+.header_text_center h1 {
+  max-width: 26rem;
+  font-weight: 900;
+}
+.header_text_center p:first-of-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 400;
 }
