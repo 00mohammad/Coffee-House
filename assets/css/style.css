@@ -1,7 +1,12 @@
+/* Fonts */
+
 body {
   font-family: "Playfair", serif;
   color: var(--color_White);
+  margin: 0;
+  padding: 0;
 }
+
 @font-face {
   font-family: "Playfair";
   src: url("/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
@@ -38,15 +43,22 @@ body {
   --color_Warm_Beige: hsl(40, 29%, 84%);
 }
 
+/* Header */
+
 header {
   position: relative;
   width: 100%;
 }
 
+/* Header background image */
+
 .header_img {
   width: 100%;
   display: block;
 }
+
+/* Header icons */
+
 .header_imgs_Coffea {
   width: 5rem;
 }
@@ -54,19 +66,25 @@ header {
   width: 3rem;
 }
 
+/* Navigation */
+
 .ul_header {
   list-style: none;
   margin: 0;
+  padding: 0;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 25rem;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
   margin-top: 2rem;
+}
+
+.header_li {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 .ul_header a {
@@ -74,33 +92,58 @@ header {
   color: white;
   font-size: 1rem;
 }
-.header_li {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  margin-right: 2rem;
-}
+
+/* Center Text on Image */
+
 .header_text_center {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 14%;
   transform: translate(-50%, -50%);
-  text-align: center;
   color: var(--color_White);
-  margin-left: -28.5rem;
-}
-.header_text_center h1 {
-  max-width: 26rem;
-  font-weight: 900;
-}
-.header_text_center p:first-of-type {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+/* First paragraph (Welcome) */
+
+.header_text_center p:first-of-type {
   font-weight: 400;
+  margin: 0 auto;
+  margin-left: 36%;
+}
+
+/* Big Title */
+
+.header_text_center h1 {
+  font-weight: 900;
+  max-width: 26rem;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+/* Second paragraph */
+
+.header_text_center p:nth-of-type(2) {
+  max-width: 25rem;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 15px;
+}
+
+/* Button */
+
+.header_text_center button {
+  padding: 0.7rem 2rem;
+
+  background-color: var(--color_Warm_Beige);
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 2rem;
+  display: flex;
 }
