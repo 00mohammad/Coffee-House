@@ -41,6 +41,7 @@ body {
 :root {
   --color_White: hsl(0, 0%, 100%);
   --color_Warm_Beige: hsl(40, 29%, 84%);
+  --color_Block: hsl(0, 0%, 0%);
 }
 
 /* Header */
@@ -137,13 +138,40 @@ header {
 /* Button */
 
 .header_text_center button {
+  width: 9rem;
   padding: 0.7rem 2rem;
-
-  background-color: var(--color_Warm_Beige);
-  color: black;
   font-weight: 600;
-  cursor: pointer;
-  margin: 0 auto;
+  margin-left: 35rem;
+  margin-top: 1rem;
   border-radius: 2rem;
+  color: var(--color_Block);
+  background-color: var(--color_White);
+}
+
+/* Nav */
+nav {
+  color: var(--color_Block);
+  background-color: var(--color_Warm_Beige);
+}
+.nav_imgs {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.img {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img img {
+  margin-top: 3rem;
+}
+
+.img p {
+  font-weight: 600;
 }
