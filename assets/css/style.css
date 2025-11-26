@@ -102,7 +102,7 @@ header {
 .header_text_center {
   position: absolute;
   top: 50%;
-  left: 14%;
+  left: 17.5%;
   transform: translate(-50%, -50%);
   color: var(--color_White);
   width: 100%;
