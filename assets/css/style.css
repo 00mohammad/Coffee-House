@@ -2,7 +2,8 @@
 
 body {
   font-family: "Playfair", serif;
-  color: var(--color_White);
+  color: var(--color_Block);
+  background-color: var(--color_White);
   margin: 0;
   padding: 0;
 }
@@ -41,6 +42,8 @@ body {
 :root {
   --color_White: hsl(0, 0%, 100%);
   --color_Warm_Beige: hsl(40, 29%, 84%);
+  --color-ivory-cream: hsl(39, 31%, 94%);
+  --color-ox-blood: hsl(0, 100%, 8%);
   --color_Block: hsl(0, 0%, 0%);
 }
 
@@ -149,6 +152,7 @@ header {
 }
 
 /* Nav */
+
 nav {
   color: var(--color_Block);
   background-color: var(--color_Warm_Beige);
@@ -157,8 +161,8 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 10rem;
 }
 .img {
@@ -183,4 +187,68 @@ nav {
   justify-content: center;
   align-items: center;
   color: var(--color_Block);
+}
+
+/* boxs */
+
+.boxs {
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 20%;
+  border-radius: 1rem;
+  background-color: var(--color-ivory-cream);
+}
+.box img {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  width: 95%;
+}
+.box h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.box > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.text_btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.text_btn p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.text_btn button {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  margin: auto;
+  color: var(--color_White);
+  background-color: var(--color-ox-blood);
 }
