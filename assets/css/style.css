@@ -253,3 +253,36 @@ nav {
   color: var(--color_White);
   background-color: var(--color-ox-blood);
 }
+/* hero */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: var(--color_Warm_Beige);
+}
+.hero-section img:nth-of-type(1) {
+  width: 25%;
+  margin-left: 0;
+  margin-top: -0.6rem;
+}
+.hero-section img:nth-of-type(2) {
+  width: 25%;
+  margin-left: auto;
+}
+.section_center h1 {
+  max-width: 24rem;
+}
+.section_center button {
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  color: var(--color_White);
+  background-color: var(--color-ox-blood);
+}
+.section_center {
+  border-radius: 1rem;
+  margin-left: 4rem;
+}
