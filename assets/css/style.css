@@ -404,18 +404,21 @@ nav {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  height: 12.5rem;
   background-color: var(--color_Warm_Beige);
 }
 .content {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 .form {
   position: relative;
   display: flex;
   align-items: center;
+  margin-left: 3.5rem;
 }
 
 .icon {
@@ -427,11 +430,13 @@ nav {
 }
 
 .input {
+  width: 17rem;
   padding: 10px 12px;
   padding-left: 40px;
-  border-radius: 6px;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin-right: 1rem;
   outline: none;
-  font-size: 14px;
   border: 1px solid var(--color_Soft_Pearl);
   background-color: var(--color_Soft_Pearl);
 }
@@ -442,6 +447,15 @@ nav {
   background: var(--color-ox-blood);
   color: var(--color_White);
   border: none;
-  border-radius: 6px;
   cursor: pointer;
+  border-radius: 2rem;
+  width: 7rem;
+}
+
+.newsletter-section img {
+  margin: 0;
+  width: 20%;
+}
+.content h1 {
+  margin: 0;
 }
